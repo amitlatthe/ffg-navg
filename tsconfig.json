@@ -22,7 +22,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "importsNotUsedAsValues": "remove",
-    "sourceMap": true,
+    "sourceMap": false,
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
@@ -30,6 +30,7 @@
     "types": ["react", "react-dom"],
     "typeRoots": ["./src/@types", "./node_modules/@types"]
   },
-  "include": ["custom.d.ts", "src/**/*", "src/node_modules/**/*"],
-  //"exclude": ["node_modules/*",  "static/*"]
+  "include": ["custom.d.ts", "./src/*", "./src/node_modules/**/*"],
 }
+
+
